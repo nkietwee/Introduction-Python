@@ -6,8 +6,7 @@
 3. [Iterating Over Different Data Types](#iterating-over-different-data-types)
 4. [The `range()` Function](#the-range-function)
 5. [Loop Control Statements](#loop-control-statements)
-6. [Nested `for` Loops](#nested-for-loops)
-7. [Practical Examples](#practical-examples)
+6. [Practical Examples](#practical-examples)
 
 ---
 
@@ -132,7 +131,7 @@ age : 25
 
 syntax
 ```
-range(start, stop - 1, step)
+range(start, stop, step)
 ```
 
 Forms:
@@ -240,3 +239,11 @@ for num in range(10):
 7
 9
 ```
+
+## **Practical Examples**
+- Check numeric value
+    Write a program that checks the numeric values ​​in a list and only displays values ​​greater than 20.
+- Search for a Specific Value in a List
+    Write a program that checks the numeric values ​​in a list and displays found is value equal 10 .
+
+
