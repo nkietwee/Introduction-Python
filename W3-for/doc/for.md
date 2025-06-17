@@ -249,6 +249,20 @@ for num in range(10):
 	Write a program that checks the numeric values ​​in a list and find average.
 - Find string in list
 	Write a program that checks the string ​​in a list and displays `Found` is string equal `green`.
+- Fizzbuzz_asd
+	Uses a for loop to iterate from 1 to 100
+	For each number in this range:
+	- If the number is divisible by both 3 and 5, print "FizzBuzz"
+	- If the number is divisible by 3, print "Fizz"
+	- If the number is divisible by 5, print "Buzz"
+	- Else, print the number itself
+- Fizzbuzz_des
+	Uses a for loop to iterate from 100 to 1
+	For each number in this range:
+	- If the number is divisible by both 3 and 5, print "FizzBuzz"
+	- If the number is divisible by 3, print "Fizz"
+	- If the number is divisible by 5, print "Buzz"
+	- Else, print the number itself
     
 
 
