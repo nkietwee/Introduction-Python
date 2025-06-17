@@ -241,14 +241,11 @@ for num in range(10):
 ```
 
 ## **Practical Examples**
-- Count character
-	Write a program that checks the string and count `c` in string
+### numerical
 - Check numeric value
 	Write a program that checks the numeric values ​​in a list and only displays values ​​greater than 20.
 - Find average in a List
 	Write a program that checks the numeric values ​​in a list and find average.
-- Find string in list
-	Write a program that checks the string ​​in a list and displays `Found` is string equal `green`.
 - Fizzbuzz_asd
 	Uses a for loop to iterate from 1 to 100
 	For each number in this range:
@@ -263,6 +260,22 @@ for num in range(10):
 	- If the number is divisible by 3, print "Fizz"
 	- If the number is divisible by 5, print "Buzz"
 	- Else, print the number itself
-    
+- Calculator
+	The program takes two user inputs and performs addition, subtraction, division, and multiplication, then prints the results if input value not equal 40
+### string
+- Count character
+	Write a program that checks the string and count `c` in string
+
+- Find string in list
+	Write a program that checks the string ​​in a list and displays `Found` is string equal `green`.
+
+### dict
 
 
+
+
+
+- for int ->
+- for string ->
+- for if else -> fizz buzz
+- for input if else
