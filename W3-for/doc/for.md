@@ -241,12 +241,14 @@ for num in range(10):
 ```
 
 ## **Practical Examples**
+- Count character
+	Write a program that checks the string and count `c` in string
 - Check numeric value
-    Write a program that checks the numeric values ​​in a list and only displays values ​​greater than 20.
-- Search for a Specific Value in a List
-    Write a program that checks the numeric values ​​in a list and displays `Found` is value equal 10.
+	Write a program that checks the numeric values ​​in a list and only displays values ​​greater than 20.
+- Find average in a List
+	Write a program that checks the numeric values ​​in a list and find average.
 - Find string in list
-    Write a program that checks the string ​​in a list and displays `Found` is string equal `Hotel`.
+	Write a program that checks the string ​​in a list and displays `Found` is string equal `green`.
     
 
 
