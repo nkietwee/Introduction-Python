@@ -262,6 +262,7 @@ for num in range(10):
 	- Else, print the number itself
 - Calculator
 	The program takes two user inputs and performs addition, subtraction, division, and multiplication, then prints the results if input value not equal 40
+
 ### string
 - Count character
 	Write a program that checks the string and count `c` in string
@@ -273,9 +274,9 @@ for num in range(10):
 
 
 
+### list
+- Append data
+	Take n inputs from the user and store them in a list
 
 
-- for int ->
-- for string ->
-- for if else -> fizz buzz
-- for input if else
+
