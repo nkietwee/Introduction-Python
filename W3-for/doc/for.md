@@ -6,7 +6,6 @@
 3. [Iterating Over Different Data Types](#iterating-over-different-data-types)
 4. [The `range()` Function](#the-range-function)
 5. [Loop Control Statements](#loop-control-statements)
-6. [Practical Examples](#practical-examples)
 
 ---
 
@@ -240,43 +239,6 @@ for num in range(10):
 9
 ```
 
-## **Practical Examples**
-### numerical
-- Check numeric value
-	Write a program that checks the numeric values ​​in a list and only displays values ​​greater than 20.
-- Find average in a List
-	Write a program that checks the numeric values ​​in a list and find average.
-- Fizzbuzz_asd
-	Uses a for loop to iterate from 1 to 100
-	For each number in this range:
-	- If the number is divisible by both 3 and 5, print "FizzBuzz"
-	- If the number is divisible by 3, print "Fizz"
-	- If the number is divisible by 5, print "Buzz"
-	- Else, print the number itself
-- Fizzbuzz_des
-	Uses a for loop to iterate from 100 to 1
-	For each number in this range:
-	- If the number is divisible by both 3 and 5, print "FizzBuzz"
-	- If the number is divisible by 3, print "Fizz"
-	- If the number is divisible by 5, print "Buzz"
-	- Else, print the number itself
-- Calculator
-	The program takes two user inputs and performs addition, subtraction, division, and multiplication, then prints the results if input value not equal 40
-
-### string
-- Count character
-	Write a program that checks the string and count `c` in string
-
-- Find string in list
-	Write a program that checks the string ​​in a list and displays `Found` is string equal `green`.
-
-### dict
-
-
-
-### list
-- Append data
-	Take n inputs from the user and store them in a list
 
 
 
