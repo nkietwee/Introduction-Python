@@ -244,6 +244,9 @@ for num in range(10):
 - Check numeric value
     Write a program that checks the numeric values ​​in a list and only displays values ​​greater than 20.
 - Search for a Specific Value in a List
-    Write a program that checks the numeric values ​​in a list and displays found is value equal 10 .
+    Write a program that checks the numeric values ​​in a list and displays `Found` is value equal 10.
+- Find string in list
+    Write a program that checks the string ​​in a list and displays `Found` is string equal `Hotel`.
+    
 
 
