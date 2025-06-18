@@ -19,6 +19,7 @@ Rectangle Pattern with Custom Number**
 	    9  9  9  9  9  9  9  9  9  9  9  9  
 	    9  9  9  9  9  9  9  9  9  9  9  9
 """
+# method 1
 try:
     rows = int(input("Enter the Total Number of Rows  : "))
     columns = int(input("Enter the Total Number of Columns  : "))
@@ -32,3 +33,17 @@ try:
 
 except ValueError:
     print("Invalid input! Please enter valid integer values.")
+
+
+# method 2
+try:
+    row = int(input("Enter the Total Number of Rows : "))
+    column = int(input("Enter the Total Number of Columns : "))
+    nbr = input("Enter Any Number : ")
+    nbr = nbr + " "  # add space after the number
+
+    for i in range(row):
+        print(nbr * column)
+
+except ValueError:
+    print("Invalid input! Please enter a valid integer for rows and columns.")

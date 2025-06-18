@@ -16,7 +16,7 @@
 	    1  2  3  4  5  6  7  8  9  10  
 	    1  2  3  4  5  6  7  8  9  10 
 """
-
+# method1
 try:
     rows = int(input("Enter the Total Number of Rows  : "))
     columns = int(input("Enter the Total Number of Columns  : "))

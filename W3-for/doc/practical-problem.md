@@ -238,7 +238,22 @@
 	1  2  3  4  5  6  7  8  9  10 
 	```
 
+- **Print a Rectangle**
+	Design a Python program that asks the user to input the number of `rows` and `columns` and then prints a hollow rectangle pattern using asterisks (*).
 
+	The pattern should have * on the borders and spaces inside — like a picture frame.
+
+	**Input**
+	```
+	$> Enter the Total Number of Rows  : 3
+	Enter the Total Number of Columns  : 10
+	```
+	**Output**
+	```
+	* * * * * * * * * * 
+	*                 * 
+	* * * * * * * * * * 
+	```
 
 
 
