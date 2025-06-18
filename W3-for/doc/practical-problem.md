@@ -41,17 +41,36 @@
 
 
 ### list
-- Append data
-	Take n inputs from the user and store them in a list
-- Print and Sum data
+- **Append data**
+	Take `n` inputs from the user and store them in a list
+	**Input**
+	```
+	$> Enter your number : 3
+	Enter string : Hello
+	Enter string : world
+	Enter string : end
+	```
+	**Output**
+	```
+	['Hello', 'world', 'end']
+	```
+- **Print and Sum data**
 	Write a Python program that displays a list of items along with their corresponding prices, and calculates the total cost of all items.
-	Given:
+	**Given**:
+	```
 		items = ["apple", "banana", "milk", "bread"]
 		prices = [10, 5, 20, 15]
+	```
+	**Output**:
+	```
+		apple: 10 baht
+		banana: 5 baht
+		milk: 20 baht
+		bread: 15 baht
 
-	Output:
-		Each item with its price in the format: item: price baht
-		The total cost of all items in the format: Total: total baht
+		Total: 50 baht
+	```
+	
 
 
 

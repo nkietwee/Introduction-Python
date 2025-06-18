@@ -18,5 +18,5 @@ total = 0
 for i in range(len(items)):
 	print(f"{items[i]}: {prices[i]} baht")
 	total += prices[i]
-
+print()
 print(f"Total: {total} baht")
