@@ -137,6 +137,26 @@
 	```
 
 ### dict
+- **Filter Students Who Passed**
+	Write a Python program that filters and prints the names of students who scored above a passing threshold using a dictionary and a for loop.
+	**Given**:
+	```python
+	scores = {
+    "Alice": 85,
+    "Bob": 58,
+    "Charlie": 92,
+    "David": 49
+	}
+	threshold = 60
+
+	```
+	**Output**:
+	```python
+	Alice: 85  
+	Charlie: 92
+
+	```
+
 
 
 
@@ -171,7 +191,52 @@
 		Total: 50 baht
 	```
 	
+### Nested Loop
+- **Rectangle Pattern with Custom Number**
+	Write a Python program that:
+	1. Asks the user to input:
+		- Total number of rows
+		- Total number of columns
+		- Any number to fill the rectangle
+	2. Prints a rectangle number pattern using the entered number, repeated in the given rows and columns.
+		**Input**
+	```
+	$> Enter the Total Number of Rows  : 6
+	Enter the Total Number of Columns  : 12
+	Enter Any Number  : 9
+	```
+	**Output**
+	```
+	Rectangle Number Pattern
+	9  9  9  9  9  9  9  9  9  9  9  9  
+	9  9  9  9  9  9  9  9  9  9  9  9  
+	9  9  9  9  9  9  9  9  9  9  9  9  
+	9  9  9  9  9  9  9  9  9  9  9  9  
+	9  9  9  9  9  9  9  9  9  9  9  9  
+	9  9  9  9  9  9  9  9  9  9  9  9  
 
+	```
+
+- **Display Rectangle Number Pattern**
+	Write a Python program that takes the number of `rows` and `columns` from the user and prints a rectangle pattern of numbers.
+
+	Each row should display numbers starting from 1 up to the number of columns, and this pattern should be repeated for the total number of rows.
+	**Input**
+	```
+	$> Enter the Total Number of Rows  : 7
+	Enter the Total Number of Columns  : 10
+	```
+	**Output**
+	```
+	Rectangle Number Pattern
+	1  2  3  4  5  6  7  8  9  10  
+	1  2  3  4  5  6  7  8  9  10  
+	1  2  3  4  5  6  7  8  9  10  
+	1  2  3  4  5  6  7  8  9  10  
+	1  2  3  4  5  6  7  8  9  10  
+	1  2  3  4  5  6  7  8  9  10  
+	1  2  3  4  5  6  7  8  9  10 
+	```
 
 
 

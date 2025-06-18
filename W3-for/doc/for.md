@@ -6,7 +6,7 @@
 3. [Iterating Over Different Data Types](#iterating-over-different-data-types)
 4. [The `range()` Function](#the-range-function)
 5. [Loop Control Statements](#loop-control-statements)
-
+6. [Nested `for` Loops](#nested-for-loops)
 ---
 
 ## Introduction to `for` Loops
@@ -276,6 +276,25 @@ for num in range(10):
 9
 ```
 
+## Nested for Loops
+A for loop inside another for loop:
+```python
+for i in range(5):
+    for j in range(2):
+        print(f"i : {i}, j : {j}")
+```
+**Output**:
 
-
+```
+i : 0, j : 0
+i : 0, j : 1
+i : 1, j : 0
+i : 1, j : 1
+i : 2, j : 0
+i : 2, j : 1
+i : 3, j : 0
+i : 3, j : 1
+i : 4, j : 0
+i : 4, j : 1
+```
 
