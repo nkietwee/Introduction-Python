@@ -122,6 +122,15 @@ is_active = input("Active? (y/n): ").lower() == 'y'
 
 ### Safe Input Handling
 
+**syntax :**
+```python
+    try:
+        # Some Code
+    except:
+        # Executed if error in the
+        # try block
+```
+**example:**
 ```python
 try:
     number = int(input("Enter a number: "))
