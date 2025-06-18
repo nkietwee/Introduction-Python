@@ -1,15 +1,11 @@
 """
 Count character
 	Write a program that checks the string and count `c` in string
-	**Given**:
-	```
+	Given:
 		txts = "cat"
 		char_to_count = "c"
-	```
-	**Output**:
-	```
+	Output:
 	The character 'c' appears 0 times in the string 'bread'.
-	```
 """
 
 # Method 1

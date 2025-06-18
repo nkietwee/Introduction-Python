@@ -1,8 +1,15 @@
 """
-- Calculator
-	The program takes two user inputs and performs addition, subtraction, division(2position),
-	and multiplication, then prints the results if input value not equal 40,
-	If not print `Input is equal 40`
+Calculator
+	The program takes two user inputs and performs addition, subtraction, division, and multiplication, then prints the results if input value not equal 40
+	Input
+		$> python3 calculator.py
+		Give me the first number: 5
+		Give me the second number: 2
+	Output
+	5 + 2 = 7
+	5 - 2 = 3
+	5 * 2 = 10
+	5 / 2 = 2.50
 """
 try:
 	num1 = int(input("Give me the first number: "))

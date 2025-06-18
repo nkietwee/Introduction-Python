@@ -4,7 +4,7 @@
 	Given:
 		lsts = ['red', 'green', 'blue']
 	Output:
-	found
+		found
 """
 
 lsts = ['red', 'green', 'blue']
