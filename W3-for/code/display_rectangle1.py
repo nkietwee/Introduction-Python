@@ -1,5 +1,5 @@
 """
-- Display Rectangle Number Pattern
+- Display Rectangle Number Pattern1
 	Write a Python program that takes the number of `rows` and `columns` from the user and prints a rectangle pattern of numbers.
 
 	Each row should display numbers starting from 1 up to the number of columns, and this pattern should be repeated for the total number of rows.

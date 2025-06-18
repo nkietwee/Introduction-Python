@@ -217,7 +217,7 @@
 
 	```
 
-- **Display Rectangle Number Pattern**
+- **Display Rectangle Number Pattern1**
 	Write a Python program that takes the number of `rows` and `columns` from the user and prints a rectangle pattern of numbers.
 
 	Each row should display numbers starting from 1 up to the number of columns, and this pattern should be repeated for the total number of rows.
@@ -237,6 +237,26 @@
 	1  2  3  4  5  6  7  8  9  10  
 	1  2  3  4  5  6  7  8  9  10 
 	```
+- **Display Rectangle Number Pattern2**
+	Write a Python program that takes the number of `rows` and `columns` from the user and prints a rectangle pattern of numbers.
+
+	In this pattern:
+		- The first number of each row starts from the row number.
+		- Each number in the row increases by 1 from the previous one.
+	**Input**
+	```
+	$> Enter the Total Number of Rows  : 5
+	Enter the Total Number of Columns  : 5
+	```
+	**Output**
+	```
+	1  2  3  4  5  
+	2  3  4  5  6  
+	3  4  5  6  7  
+	4  5  6  7  8  
+	5  6  7  8  9  
+	``` 
+
 
 - **Print a Rectangle**
 	Design a Python program that asks the user to input the number of `rows` and `columns` and then prints a hollow rectangle pattern using asterisks (*).
