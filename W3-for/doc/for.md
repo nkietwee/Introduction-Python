@@ -40,6 +40,7 @@ fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
 ```
+
 **Output**:
 
 ```
@@ -197,7 +198,43 @@ for i in range(20, 10, -2):
 12
 ```
 
+4. `range(len(data))`
+```python
+lsts = [10, 20, 30, 40]
+for i in range(len(lsts)):
+    print(lsts[i])
+```
 
+**Output**:
+
+```
+10
+20
+30
+40
+```
+
+```python
+txts = 'Hello World'
+for i in range(len(txts)):
+    print(txts[i])
+```
+
+**Output**:
+
+```
+H
+e
+l
+l
+o
+
+W
+o
+r
+l
+d
+```
 ## **Loop Control Statements**
 
 1. `break`
