@@ -30,11 +30,27 @@
 	2 * 2 = 4
 	```
 ### string
-- Count character
+- **Count character**
 	Write a program that checks the string and count `c` in string
-
-- Find string in list
+	**Given**:
+	```
+		txts = "cat"
+		char_to_count = "c"
+	```
+	**Output**:
+	```
+	The character c appears 1 times in the string cat.
+	```
+- **Find string in list**
 	Write a program that checks the string ​​in a list and displays `Found` is string equal `green`.
+		**Given**:
+	```
+		lsts = ['red', 'green', 'blue']
+	```
+	**Output**:
+	```
+	found
+	```
 
 ### dict
 

@@ -1,6 +1,13 @@
 """
 - Append data
-	Take n inputs from the user and store them in a list
+	Take `n` inputs from the user and store them in a list
+	Input
+		$> Enter your number : 3
+		Enter string : Hello
+		Enter string : world
+		Enter string : end
+	Output
+		['Hello', 'world', 'end']
 """
 
 try:
