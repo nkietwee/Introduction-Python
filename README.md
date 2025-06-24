@@ -41,7 +41,7 @@ This repository contains beginner-friendly Python exercises and documentation ca
 
 ## 📁 Week 4 – While Loops
 
-- **[Documentation: for loop](W4-while/doc/for.md)**
+- **[Documentation: for loop](W4-while/doc/while.md)**
 - **[Practical Problems](W4-while/doc/practical-problem.md)**
 - **Code Examples**:
   - [doc_break_continue.py](W4-while/code/doc_break_continue.py)
