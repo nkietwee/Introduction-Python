@@ -59,44 +59,75 @@
 	Invalid password. Attempts left: 0
 	```
 
-- **Simple Number Guessing Game**
-  Write a Python script that implements the following game using a while loop.
+## Simple Number Guessing Game
 
-  **Setup**
-   - Import the standard random module.
-   - Define max_num = 30.
-   - Use random.randint(1, max_num) to choose a secret number between 1 and 30.
-   - Initialize an attempt counter to 0.
-  
-  **Gameplay Loop**
-   - Repeatedly prompt the user with:
+Write a Python script that implements the following game using a `while` loop.
+
+---
+
+### 1. Setup
+
+1. Import the standard `random` module.  
+   ```python
+   import random
    ```
-	Round x - Guess Your Number:
+2. Define the maximum number:
+   ```python
+   max_num = 30
    ```
-   - If the user enters anything other than digits, print
+3. Choose a secret number between 1 and 30:
+   ```python
+   target = random.randint(1, max_num)
    ```
-	❌ Please enter a number!
+4. Initialize an attempt counter:
+   ```python
+   attempts = 0
    ```
-   and ask again (without counting it as an attempt).
-   - Convert valid input to an integer, increment the attempt counter, and compare to the secret number:
-     	- If the guess is correct, print
-     	```
-      	🎉 Congratulations! You guessed it in X attempts.
-      	```
-	and exit the loop.
-	- If the guess is lower than the secret number, print
-       ```
-       ⬆️ Higher!
-       ```
-	- If the guess is higher, print
-	```
-	⬇️ Lower!
-	```
-   - End of Game
-	After a correct guess, the program should print a farewell message, for example:
-		```
-		Thanks for playing! 😊
-		```
+
+---
+
+### 2. Gameplay Loop
+
+Use a `while True` loop with these steps:
+
+1. Prompt the user (showing the current round):
+   ```plaintext
+   Round 1 – Guess Your Number:
+   ```
+2. Read input and validate:
+   - If input is not all digits, print:
+     ```plaintext
+     ❌ Please enter a number!
+     ```
+     and **continue** (do **not** increment `attempts`).
+3. Convert valid input to an integer and increment the counter:
+   ```python
+   guess = int(user_input)
+   attempts += 1
+   ```
+4. Compare `guess` to `target`:
+   - **Correct**:
+     ```plaintext
+     🎉 Congratulations! You guessed it in X attempts.
+     ```
+     then **break** out of the loop.
+   - **Too low**:
+     ```plaintext
+     ⬆️ Higher!
+     ```
+   - **Too high**:
+     ```plaintext
+     ⬇️ Lower!
+     ```
+
+---
+
+### 3. End of Game
+
+After breaking out of the loop, print a farewell message:
+```plaintext
+Thanks for playing! 😊
+```
   
 ### Nested while Loops
 
