@@ -80,15 +80,14 @@
    and ask again (without counting it as an attempt).
    - Convert valid input to an integer, increment the attempt counter, and compare to the secret number:
      - If the guess is correct, print
-	```
-	🎉 Congratulations! You guessed it in X attempts.
- 	```
+     	```
+      	🎉 Congratulations! You guessed it in X attempts.
+      	```
 	and exit the loop.
-
      - If the guess is lower than the secret number, print
-	```
-	⬆️ Higher!
-	```
+       ```
+       ⬆️ Higher!
+       ```
      - If the guess is higher, print
 	```
 	⬇️ Lower!
