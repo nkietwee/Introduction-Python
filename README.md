@@ -55,4 +55,5 @@ This repository contains beginner-friendly Python exercises and documentation ca
   - [practical_rectangle_number_2.py](W4-while/code/practical_rectangle_number_2.py)
   - [practical_rectangle_pattern.py](W4-while/code/practical_rectangle_pattern.py)
   - [print_hollow_rectangle.py](W4-while/code/print_hollow_rectangle.py)
+  - [practical_number_guessing_game](W4-while/code/practical_number_guessing_game.py)
 ---
