@@ -62,37 +62,37 @@
 - **Simple Number Guessing Game**
 Write a Python script that implements the following game using a while loop.
 
-**Setup**
- - Import the standard random module.
- - Define max_num = 30.
- - Use random.randint(1, max_num) to choose a secret number between 1 and 30.
- - Initialize an attempt counter to 0.
-**Gameplay Loop**
- - Repeatedly prompt the user with:
-   ```
-   Round x - Guess Your Number: 
-   ```
- - If the user enters anything other than digits, print
-   ```
-   ❌ Please enter a number!
-   ```
-   and ask again (without counting it as an attempt).
- - Convert valid input to an integer, increment the attempt counter, and compare to the secret number:
-   	- If the guess is correct, print
-	```
- 	🎉 Congratulations! You guessed it in X attempts.
- 	```
- 	and exit the loop.
-	- If the guess is lower than the secret number, print
-   	```⬆️ Higher!```
-   	- If the guess is higher, print
-   	```⬇️ Lower!```
- - End of Game
-   After a correct guess, the program should print a farewell message, for example:
-   ```
-	Thanks for playing! 😊
-   ```
-
+	**Setup**
+ 		- Import the standard random module.
+ 		- Define max_num = 30.
+ 		- Use random.randint(1, max_num) to choose a secret number between 1 and 30.
+ 		- Initialize an attempt counter to 0.
+	**Gameplay Loop**
+		- Repeatedly prompt the user with:
+		   ```
+		   Round x - Guess Your Number: 
+		   ```
+		 - If the user enters anything other than digits, print
+		   ```
+		   ❌ Please enter a number!
+		   ```
+  		and ask again (without counting it as an attempt).
+		 - Convert valid input to an integer, increment the attempt counter, and compare to the secret number:
+		   	- If the guess is correct, print
+			```
+		 	🎉 Congratulations! You guessed it in X attempts.
+		 	```
+		 	and exit the loop.
+			- If the guess is lower than the secret number, print
+		   	```⬆️ Higher!```
+		   	- If the guess is higher, print
+		   	```⬇️ Lower!```
+		 - End of Game
+		   After a correct guess, the program should print a farewell message, for example:
+		   ```
+			Thanks for playing! 😊
+		   ```
+  
 ### Nested while Loops
 
 - **Rectangle Pattern with Custom Number**
