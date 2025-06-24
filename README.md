@@ -38,3 +38,21 @@ This repository contains beginner-friendly Python exercises and documentation ca
   - [rectangle_custom.py](W3-for/code/rectangle_custom.py)
 
 ---
+
+## 📁 Week 4 – While Loops
+
+- **[Documentation: for loop](W4-while/doc/for.md)**
+- **[Practical Problems](W4-while/doc/practical-problem.md)**
+- **Code Examples**:
+  - [doc_break_continue.py](W4-while/code/doc_break_continue.py)
+  - [doc_break.py](W4-while/code/doc_break.py)
+  - [doc_count.py](W4-while/code/doc_count.py)
+  - [practical_multiplication.py](W4-while/code/practical_multiplication.py)
+  - [practical_password-prompt.py](W4-while/code/practical_password-prompt.py)
+  - [practical_print_number.py](W4-while/code/practical_print_number.py)
+  - [practical_prompt.py](W4-while/code/practical_prompt.py)
+  - [practical_rectangle_number.py](W4-while/code/practical_rectangle_number.py)
+  - [practical_rectangle_number_2.py](W4-while/code/practical_rectangle_number_2.py)
+  - [practical_rectangle_pattern.py](W4-while/code/practical_rectangle_pattern.py)
+  - [print_hollow_rectangle.py](W4-while/code/print_hollow_rectangle.py)
+---
