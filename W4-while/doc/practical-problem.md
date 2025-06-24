@@ -1,5 +1,5 @@
-### **Practical Examples**
-
+## **Practical Examples**
+### Basic While loop 
 - **Multiplication Table**
 	Ask the user for a **positive integer** n and print its multiplication table up to 10 using a while loop.
 	Sample Interaction:
@@ -61,48 +61,83 @@
 
 
 ### Nested while Loops
-### Rectangle Pattern with Custom Number
+
+- **Rectangle Pattern with Custom Number**
 
 Use two nested while loops: outer for rows, inner for columns. Fill with a user-provided number.
 Sample Interaction:
 
-
+**Input :** 
+```
 Rows: 6
 Columns: 12
 Fill number: 9
+```
 
+**Output**
+```
 9 9 9 9 9 9 9 9 9 9 9 9
-… (6 rows total)
+9 9 9 9 9 9 9 9 9 9 9 9
+9 9 9 9 9 9 9 9 9 9 9 9
+9 9 9 9 9 9 9 9 9 9 9 9
+9 9 9 9 9 9 9 9 9 9 9 9
+9 9 9 9 9 9 9 9 9 9 9 9
+```
 
-Display Rectangle Number Pattern 1
+
+- **Display Rectangle Number Pattern 1**
+
 Print the numbers 1…C on each row for R rows, using nested while.
-Input: Rows: 7
+
+**Input :**
+```
+Rows: 7
 Columns: 10
-Output:
+```
 
+**Output :**
+
+```
 1 2 3 4 5 6 7 8 9 10
-… (7 rows total)
+1 2 3 4 5 6 7 8 9 10
+1 2 3 4 5 6 7 8 9 10
+1 2 3 4 5 6 7 8 9 10
+1 2 3 4 5 6 7 8 9 10
+1 2 3 4 5 6 7 8 9 10
+1 2 3 4 5 6 7 8 9 10
+```
 
-Display Rectangle Number Pattern 2
+
+**Display Rectangle Number Pattern 2**
+
 First number in row i is i; each subsequent number increments by 1. Use nested while.
-Input: Rows: 5
+
+**Input :**
+```
+Rows: 5
 Columns: 5
-Output:
+```
+**Output :**
+```
 1 2 3 4 5
 2 3 4 5 6
 3 4 5 6 7
 4 5 6 7 8
 5 6 7 8 9
+```
 
-
-Print a Hollow Rectangle
+**Print a Hollow Rectangle**
 Ask for rows and columns, then use nested while loops to print a rectangle of * with hollow interior.
-Input:
 
+**Input :**
+```
 Rows: 3
 Columns: 10
+```
 
+**Output :**
+```
 * * * * * * * * * *
 *                 *
 * * * * * * * * * *
-
+```
