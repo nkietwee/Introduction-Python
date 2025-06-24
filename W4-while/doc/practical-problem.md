@@ -60,13 +60,13 @@
 	```
 
 - **Simple Number Guessing Game**
-Write a Python script that implements the following game using a while loop.
+  Write a Python script that implements the following game using a while loop.
 
-	**Setup**
- 		- Import the standard random module.
- 		- Define max_num = 30.
- 		- Use random.randint(1, max_num) to choose a secret number between 1 and 30.
- 		- Initialize an attempt counter to 0.
+  **Setup**
+   - Import the standard random module.
+   - Define max_num = 30.
+   - Use random.randint(1, max_num) to choose a secret number between 1 and 30.
+   - Initialize an attempt counter to 0.
 	**Gameplay Loop**
 		- Repeatedly prompt the user with:
 		   ```
