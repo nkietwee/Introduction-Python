@@ -69,9 +69,13 @@
    - Initialize an attempt counter to 0.
   **Gameplay Loop**
    - Repeatedly prompt the user with:
-   ```Round x - Guess Your Number: ```
+   ```
+	Round x - Guess Your Number:
+   ```
    - If the user enters anything other than digits, print
-   ```❌ Please enter a number!```
+   ```
+	❌ Please enter a number!
+   ```
    and ask again (without counting it as an attempt).
    - Convert valid input to an integer, increment the attempt counter, and compare to the secret number:
      - If the guess is correct, print
