@@ -58,3 +58,51 @@
 	Attempt 3 of 3: sss
 	Invalid password. Attempts left: 0
 	```
+
+
+### Nested while Loops
+### Rectangle Pattern with Custom Number
+
+Use two nested while loops: outer for rows, inner for columns. Fill with a user-provided number.
+Sample Interaction:
+
+
+Rows: 6
+Columns: 12
+Fill number: 9
+
+9 9 9 9 9 9 9 9 9 9 9 9
+… (6 rows total)
+
+Display Rectangle Number Pattern 1
+Print the numbers 1…C on each row for R rows, using nested while.
+Input: Rows: 7
+Columns: 10
+Output:
+
+1 2 3 4 5 6 7 8 9 10
+… (7 rows total)
+
+Display Rectangle Number Pattern 2
+First number in row i is i; each subsequent number increments by 1. Use nested while.
+Input: Rows: 5
+Columns: 5
+Output:
+1 2 3 4 5
+2 3 4 5 6
+3 4 5 6 7
+4 5 6 7 8
+5 6 7 8 9
+
+
+Print a Hollow Rectangle
+Ask for rows and columns, then use nested while loops to print a rectangle of * with hollow interior.
+Input:
+
+Rows: 3
+Columns: 10
+
+* * * * * * * * * *
+*                 *
+* * * * * * * * * *
+
