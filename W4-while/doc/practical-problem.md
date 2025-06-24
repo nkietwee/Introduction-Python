@@ -84,14 +84,15 @@
 	🎉 Congratulations! You guessed it in X attempts.
  	```
 	and exit the loop.
-  		- If the guess is lower than the secret number, print
-	  	```
-		⬆️ Higher!
-  		```
-		- If the guess is higher, print
-		```
-		⬇️ Lower!
-  		```
+
+     - If the guess is lower than the secret number, print
+	```
+	⬆️ Higher!
+	```
+     - If the guess is higher, print
+	```
+	⬇️ Lower!
+	```
    - End of Game
 	After a correct guess, the program should print a farewell message, for example:
 		```
