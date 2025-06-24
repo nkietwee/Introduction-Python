@@ -59,13 +59,11 @@
 	Invalid password. Attempts left: 0
 	```
 
-## Simple Number Guessing Game
+- ** Simple Number Guessing Game **
 
 Write a Python script that implements the following game using a `while` loop.
 
----
-
-### 1. Setup
+ **1. Setup**
 
 1. Import the standard `random` module.  
    ```python
@@ -84,9 +82,7 @@ Write a Python script that implements the following game using a `while` loop.
    attempts = 0
    ```
 
----
-
-### 2. Gameplay Loop
+ ** 2. Gameplay Loop **
 
 Use a `while True` loop with these steps:
 
@@ -120,9 +116,7 @@ Use a `while True` loop with these steps:
      ⬇️ Lower!
      ```
 
----
-
-### 3. End of Game
+** 3. End of Game **
 
 After breaking out of the loop, print a farewell message:
 ```plaintext
