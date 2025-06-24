@@ -79,19 +79,19 @@
    ```
    and ask again (without counting it as an attempt).
    - Convert valid input to an integer, increment the attempt counter, and compare to the secret number:
-     - If the guess is correct, print
+     	- If the guess is correct, print
      	```
       	🎉 Congratulations! You guessed it in X attempts.
       	```
 	and exit the loop.
-	     - If the guess is lower than the secret number, print
-	       ```
-	       ⬆️ Higher!
-	       ```
-	     - If the guess is higher, print
-		```
-		⬇️ Lower!
-		```
+	- If the guess is lower than the secret number, print
+       ```
+       ⬆️ Higher!
+       ```
+	- If the guess is higher, print
+	```
+	⬇️ Lower!
+	```
    - End of Game
 	After a correct guess, the program should print a farewell message, for example:
 		```
