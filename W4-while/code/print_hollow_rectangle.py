@@ -4,8 +4,8 @@ Print a Hollow Rectangle
 Ask for rows and columns, then use nested while loops to print a rectangle of * with hollow interior.
 
 Input :
-Rows: 3
-Columns: 10
+	Rows: 3
+	Columns: 10
 
 Output :
 * * * * * * * * * *
