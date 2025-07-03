@@ -55,5 +55,20 @@ This repository contains beginner-friendly Python exercises and documentation ca
   - [practical_rectangle_number_2.py](W4-while/code/practical_rectangle_number_2.py)
   - [practical_rectangle_pattern.py](W4-while/code/practical_rectangle_pattern.py)
   - [print_hollow_rectangle.py](W4-while/code/print_hollow_rectangle.py)
-  - [practical_number_guessing_game](W4-while/code/practical_number_guessing_game.py)
+
+---
+
+## 📁 Week 5 - Function
+
+- **[Documentation: Function](W5-function/doc/function.md)**
+- **[Practical Problems](W5-function/doc/practical-problem.md)**
+- **Code Examples**:
+  - [practical_enforce.py](W5-function/code/practical_enforce.py)
+  - [practical_even_number.py](W5-function/code/practical_even_number.py)
+  - [practical_factorial.py](W5-function/code/practical_factorial.py)
+  - [practical_number_guessing_game.py](W5-function/code/practical_number_guessing_game.py)
+  - [practical_profile.py](W5-function/code/practical_profile.py)
+  - [practical_rectangle_area.py](W5-function/code/practical_rectangle_area.py)
+  - [practical_unlimited_number.py](W5-function/code/practical_unlimited_number.py)
+
 ---
