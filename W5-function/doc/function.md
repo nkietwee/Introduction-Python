@@ -112,7 +112,7 @@ my_function("Boat", "Mew", "Placartoon")
 
 **Output:**
 ```
-The youngest child is Linus
+The youngest child is Placartoon
 ```
 
 ## 7. Keyword Arguments
