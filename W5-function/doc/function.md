@@ -34,7 +34,7 @@ def my_function():
 
 ```python
 def my_function():
-    printf("Hello from a function")
+    print("Hello from a function")
 
 my_function()
 ```
