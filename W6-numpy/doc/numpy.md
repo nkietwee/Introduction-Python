@@ -175,11 +175,119 @@ Boolean mask (a > 3):
 Elements greater than 3: [4 5 6 7 8 9]
 ```
 
-
-
 ### 5. Array Operations
+Perform basic mathematical operations on arrays. These are essential for machine learning tasks like vectorized computation, feature scaling, and matrix math.
+
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+# Element-wise operations
+print(f"a + b = {a + b}")
+print(f"a - b = {a - b}")
+print(f"a * b = {a * b}")
+print(f"a / b = {a / b}")
+print(f"a ** 2 = {a ** 2}")
+print(f"a * 2 = {a * 2}")
+
+# Aggregation functions on b
+print(f"Sum of b: {np.sum(b)}")
+print(f"Mean of b: {np.mean(b)}")
+print(f"Max of b: {np.max(b)}")
+print(f"Min of b: {np.min(b)}")
+print(f"Standard deviation of b: {np.std(b):.4f}")
+
+# Dot product
+print(f"Dot product of a and b: {np.dot(a, b)}")
+
+# Concatenation
+print(f"Concatenate a and b: {np.concatenate((a, b))}")
+
+# Sorting
+unsorted = np.array([3, 1, 5])
+print(f"Sorted array: {np.sort(unsorted)}")
+
+# Comparisons
+print(f"a > 2: {a > 2}")
+print(f"b == 5: {b == 5}")
+
+```
+result :
+```python
+a + b = [5 7 9]
+a - b = [-3 -3 -3]
+a * b = [ 4 10 18]
+a / b = [0.25 0.4  0.5 ]
+a ** 2 = [1 4 9]
+a * 2 = [2 4 6]
+Sum of b: 15
+Mean of b: 5.0
+Max of b: 6
+Min of b: 4
+Standard deviation of b: 0.8165
+Dot product of a and b: 32
+Concatenate a and b: [1 2 3 4 5 6]
+Sorted array: [1 3 5]
+a > 2: [False False  True]
+b == 5: [False  True False]
+```
+
 ### 6. Reshaping Arrays
+NumPy allows easy reshaping of arrays to change their structure without changing the data.
+```python
+a = np.arange(6)                     # Create array: [0, 1, 2, 3, 4, 5]
+b = a.reshape((2, 3))                # Reshape into 2 rows × 3 columns
+c = b.flatten()                      # Flatten back to 1D
+
+print(f"Original a: {a}")
+print(f"Reshaped b (2x3):\n{b}")
+print(f"Flattened c: {c}")
+```
+
+result :
+```python
+Original a: [0 1 2 3 4 5]
+Reshaped b (2x3):
+[[0 1 2]
+ [3 4 5]]
+Flattened c: [0 1 2 3 4 5]
+```
+
 ### 7. Stacking Arrays
+NumPy provides stacking functions to join arrays vertically (`vstack`)
+or horizontally (`hstack`). These are helpful when combining data from multiple sources.
+```python
+a = np.array([[1, 2],
+              [3, 4]])
+
+b = np.array([[5, 6]])
+
+# Vertical stack: combine a and b row-wise
+v = np.vstack([a, b])
+
+# Horizontal stack: combine a and transpose of b column-wise
+h = np.hstack([a, b.T])
+
+print(f"Vertical stack (vstack):\n{v}")
+print(f"Horizontal stack (hstack):\n{h}")
+```
+result :
+```python
+Vertical stack (vstack):
+[[1 2]
+ [3 4]
+ [5 6]]
+Horizontal stack (hstack):
+[[1 2 5]
+ [3 4 6]]
+```
+
+| Function           | Purpose                             | Resulting Shape | Axis Behavior         | Requirements                                |
+| ------------------ | ----------------------------------- | --------------- | --------------------- | ------------------------------------------- |
+| `np.concatenate()` | Joins arrays along an existing axis | Customizable    | Default `axis=0`      | Shapes must match **except** on concat axis |
+| `np.vstack()`      | Stack arrays **vertically**         | (rows added)    | Always axis=0         | 1D arrays become rows                       |
+| `np.hstack()`      | Stack arrays **horizontally**       | (columns added) | Depends on array rank | 1D arrays become columns                    |
+
 ### 8. Random Numbers
 
 
