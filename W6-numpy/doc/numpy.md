@@ -33,125 +33,148 @@ import numpy as np
 ```
 
 ### 2. Creating Arrays
-- #### Basic array
-```python
-a = np.array([1, 2, 3]) # or a = np.array((1, 2, 3))
-```
-- Creates a NumPy array from a Python sequence such as list tuple.
-- Used to convert regular lists into fast, vectorized arrays.
-
-**Output:**
-```python
-array([1, 2, 3])
-```
 
 ```python
-a = np.array([[1, 2, 3], [4, 5, 6]])  #or a = np.array(((1, 2, 3,), (4, 5, 6)))
-```
-- Creates a NumPy 2D array from a Python sequence such as list tuple.
-- Used to convert regular lists into fast, vectorized arrays.
+# Creates a NumPy array from a Python sequence such as list or tuple.
+a = np.array([1, 2, 3]) 
+b = np.array((1, 2, 3), , dtype=np.int16) # define type of data
 
-**Output:**
+# Creates 2D NumPy array from a Python sequence such as list or tuple.
+c = np.array([[1, 2, 3], [4, 5, 6]])
+d = np.array(((1, 2, 3), (4, 5, 6)))
+
+e = np.zeros((2, 3))       # Create an Array of Zeros
+f = np.ones((3, 5))        # Create an Array of Ones
+g = np.arange(0, 10, 2)    # Create a Range of Values
+h = np.linspace(0, 1, 5)   # Create Evenly Spaced Values
+
+print(f'1D np.array with list: {a}')
+print(f'1D np.array with tuple: {b}')
+print(f'2D np.array with list: \n{c}')
+print(f'2D np.array with tuple: \n{d}')
+print(f'np.array with zeros: \n{e}')
+print(f'np.array with ones: \n{f}')
+print(f'np.array with range of numbers: {g}')
+print(f'np.array with evenly spaced values: {h}')
+
+```
+result
 ```python
+1D np.array with list: [1 2 3]
+1D np.array with tuple: [1 2 3]
+2D np.array with list: 
 [[1 2 3]
  [4 5 6]]
-```
-
-- #### Create an Array of Zeros
-```python
-b = np.zeros((2, 3))
-```
-- Creates a 2x3 matrix filled with zeros.
-- Useful for initializing weights in AI models.
-
-**Output:**
-```python
-array([[0., 0., 0.],
-       [0., 0., 0.]])
-```
-
-- #### Create an Array of Ones
-```python
-c = np.ones((3, 5))
-```
-- Creates a 3x3 matrix filled with ones.
-- Often used to simulate filters or constant matrices.
-
-**Output:**
-```python
+2D np.array with tuple: 
+[[1 2 3]
+ [4 5 6]]
+np.array with zeros: 
+[[0. 0. 0.]
+ [0. 0. 0.]]
+np.array with ones: 
 [[1. 1. 1. 1. 1.]
  [1. 1. 1. 1. 1.]
  [1. 1. 1. 1. 1.]]
-```
-
-- #### Create a Range of Values
-```python
-d = np.arange(0, 10, 2) # start stop step
-```
-- Creates values from 0 to 8, stepping by 2.
-- Similar to Python range(), but returns a NumPy array.
-
-**Output:**
-```python
-array([0, 2, 4, 6, 8])
-```
-
-- #### Create Evenly Spaced Values
-```python
-e = np.linspace(0, 1, 5)
-```
-- Creates 5 evenly spaced values between 0 and 1.
-- Useful for graph axes, test values, or dividing a range smoothly.
-
-**Output:**
-```python
-array([0.  , 0.25, 0.5 , 0.75, 1.  ])
+np.array with range of numbers: [0 2 4 6 8]
+np.array with evenly spaced values: [0.   0.25 0.5  0.75 1.  ]
 ```
 
 ## Summary Table
 
-| Syntax                 | Description                      | Example Output                         |
-| ---------------------- | -------------------------------- | -------------------------------------- |
-| `np.array([1, 2, 3])`  | Convert list to NumPy array      | `[1, 2, 3]`                            |
-| `np.array(((1, 2, 3), (4, 5, 6)))`  | Convert tuple to NumPy array      | `[[1, 2, 3],  [4 5 6]]`                            |
-| `np.zeros((2, 3))`     | Create 2x3 array of zeros        | `[[0. 0. 0.], [0. 0. 0.]]`             |
-| `np.ones((3, 3))`      | Create 3x3 array of ones         | `[[1. 1. 1.], [1. 1. 1.], [1. 1. 1.]]` |
-| `np.arange(0, 10, 2)`  | Range from 0 to 8 with step of 2 | `[0, 2, 4, 6, 8]`                      |
-| `np.linspace(0, 1, 5)` | 5 values between 0 and 1         | `[0. , 0.25, 0.5, 0.75, 1. ]`          |
+| Syntax                         | Description                      | Example Output                          | Useful For                              |
+|-------------------------------|----------------------------------|------------------------------------------|------------------------------------------|
+| `np.array([1, 2, 3])`         | Convert list to NumPy array      | `[1, 2, 3]`                              | Creating basic 1D array for calculations |
+| `np.array(((1, 2, 3), (4, 5, 6)))` | Convert tuple to 2D NumPy array | `[[1, 2, 3], [4, 5, 6]]`                 | Working with matrices or tables          |
+| `np.zeros((2, 3))`            | Create 2x3 array of zeros        | `[[0. 0. 0.], [0. 0. 0.]]`               | Initializing weights, placeholders       |
+| `np.ones((3, 3))`             | Create 3x3 array of ones         | `[[1. 1. 1.], [1. 1. 1.], [1. 1. 1.]]`   | Creating filters, identity-like arrays   |
+| `np.arange(0, 10, 2)`         | Range from 0 to 8 with step of 2 | `[0, 2, 4, 6, 8]`                        | Generating sequences, loops              |
+| `np.linspace(0, 1, 5)`        | 5 values between 0 and 1         | `[0. , 0.25, 0.5, 0.75, 1. ]`            | Creating axes, testing, interpolation    |
+
 
 ### 3. Array Properties
-- #### a.shape
+How to get properties of numpy array
 
 ```python
-a = np.array(((1, 2, 3,), (4, 5, 6)))
-a.shape
+# Create a 2D NumPy array (2 rows, 3 columns) from a tuple of tuples
+# dtype is inferred as int64 (or int32 depending on your platform)
+a = np.array(((1, 2, 3), (4, 5, 6)))
+print(a.shape)  # Output: (2, 3) — means 2 rows and 3 columns
+print(f'dtype of a: {a.dtype}')  # e.g., int64
+
+# Create a 3x3 array filled with ones
+# Default dtype is float64 unless specified
+ones_array = np.ones((3, 3))
+print(ones_array.size)  # Output: 9 — 3 rows * 3 columns = 9 elements
+print(f'dtype of ones_array: {ones_array.dtype}')  # float64
+
 ```
-Returns the shape (rows, columns) of the array a.
+
 
 **Output:**
 ```python
 (2, 3)
-```
-
-- #### b.size
-
-```python
-np.ones((3, 3)).size
-```
-Returns the shape (rows, columns) of the array a.
-
-**Output:**
-```python
 9
 ```
 ## Summary Table
 
-| Property  | Description                        | Example Output |
-| --------- | ---------------------------------- | -------------- |
-| `a.shape` | Shape of the array (rows, columns) | `(2, 3)`         |
-| `c.size`  | Total number of elements           | `9`            |
+| Expression             | Description                                    | Output   | dtype     |
+|------------------------|------------------------------------------------|----------|-----------|
+| `a.shape`              | Returns the shape (rows, columns) of the array | `(2, 3)` | `int64`*  |
+| `a.dtype`              | Returns the data type of the array elements    | `int64`* | `int64`*  |
+| `np.ones((3, 3)).size` | Total number of elements in the array          | `9`      | `float64` |
+
 
 ### 4. Indexing and Slicing
+how to access specific elements, rows, columns, and slices in a NumPy array.
+
+```python
+a = np.array([[1, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9]])
+
+# [row, column]
+
+# Basic Indexing
+print(f'Access row 0: {a[0]}')
+print(f'Access row 1 to end:\n{a[1:]}')
+print(f'Access element at (0,2): {a[0, 2]}')
+
+# Slicing
+print(f'Access all rows, column 1: {a[:, 1]}')
+print(f'Access row 1, first 2 columns: {a[1, :2]}')
+print(f'Access full array:\n{a[:, :]}')
+print(f'Access top-left 1x2 block: {a[:1, :2]}')
+print(f'Access last row: {a[-1]}')
+
+# Boolean Indexing
+
+print(f'Boolean mask (a > 3):\n{a > 3}')
+print(f'Elements greater than 3: {a[a > 3]}')
+```
+
+
+**Output:**
+```python
+Access row 0: [1 2 3]
+Access row 1 to end:
+[[4 5 6]
+ [7 8 9]]
+Access element at (0,2): 3
+Access all rows, column 1: [2 5 8]
+Access row 1, first 2 columns: [4 5]
+Access full array:
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+Access top-left 1x2 block: [[1 2]]
+Access last row: [7 8 9]
+Boolean mask (a > 3):
+[[False False False]
+ [ True  True  True]
+ [ True  True  True]]
+Elements greater than 3: [4 5 6 7 8 9]
+```
+
 
 
 ### 5. Array Operations
@@ -160,3 +183,42 @@ Returns the shape (rows, columns) of the array a.
 ### 8. Random Numbers
 
 
+```import numpy as np
+import time
+
+# Create large data
+size = 1_000_000
+py_list = list(range(size))
+np_array = np.array(py_list)
+
+# 1. Add 1 to each element
+
+# Using list (slow, not vectorized)
+start = time.time()
+py_result = [x + 1 for x in py_list]
+end = time.time()
+print(f"List addition time: {end - start:.5f} sec")
+
+# Using NumPy (fast, vectorized)
+start = time.time()
+np_result = np_array + 1
+end = time.time()
+print(f"NumPy addition time: {end - start:.5f} sec")
+
+# 2. Get mean value
+# Python list requires manual calculation
+start = time.time()
+py_mean = sum(py_list) / len(py_list)
+end = time.time()
+print(f"List mean: {py_mean}, time: {end - start:.5f} sec")
+
+# NumPy has built-in mean()
+start = time.time()
+np_mean = np.mean(np_array)
+end = time.time()
+print(f"NumPy mean: {np_mean}, time: {end - start:.5f} sec")
+
+# 3. Memory usage comparison
+print(f"List item size: {py_list.__sizeof__()} bytes (approx)")
+print(f"NumPy item size: {np_array.nbytes} bytes (exact)")
+```
