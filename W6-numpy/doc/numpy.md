@@ -290,14 +290,36 @@ Horizontal stack (hstack):
 
 ### 8. Random Numbers
 
+NumPy's `random` module helps you generate random numbers for simulations, model testing, or creating synthetic datasets. Setting a seed ensures reproducibility.
 
-```import numpy as np
+```python
+np.random.seed(42)                  # Set seed for reproducibility
+
+a = np.random.rand(3)               # Generate 3 random floats between 0 and 1
+b = np.random.randint(0, 10, (2, 3)) # Generate 2x3 matrix of random integers between 0 and 9
+
+print(f"Random floats (a): {a}")
+print(f"Random integers (b):\n{b}")
+```
+
+Result :
+```python
+Random floats (a): [0.59241457 0.04645041 0.60754485]
+Random integers (b):
+[[4 8 6]
+ [1 3 8]]
+```
+
+
+## Performance and Efficiency Comparison: Python List vs NumPy Array
+```python
+import numpy as np
 import time
 
-# Create large data
+# Create large random data (same every time)
 size = 1_000_000
-py_list = list(range(size))
-np_array = np.array(py_list)
+py_list = [random.randint(0, 100) for _ in range(size)]  # Random integers 0–100
+np_array = np.array(py_list)  # Convert to NumPy array
 
 # 1. Add 1 to each element
 
@@ -314,19 +336,30 @@ end = time.time()
 print(f"NumPy addition time: {end - start:.5f} sec")
 
 # 2. Get mean value
+
 # Python list requires manual calculation
 start = time.time()
 py_mean = sum(py_list) / len(py_list)
 end = time.time()
-print(f"List mean: {py_mean}, time: {end - start:.5f} sec")
+print(f"List mean: {py_mean:.2f}, time: {end - start:.5f} sec")
 
 # NumPy has built-in mean()
 start = time.time()
 np_mean = np.mean(np_array)
 end = time.time()
-print(f"NumPy mean: {np_mean}, time: {end - start:.5f} sec")
+print(f"NumPy mean: {np_mean:.2f}, time: {end - start:.5f} sec")
 
 # 3. Memory usage comparison
 print(f"List item size: {py_list.__sizeof__()} bytes (approx)")
 print(f"NumPy item size: {np_array.nbytes} bytes (exact)")
+```
+
+Result:
+```python
+List addition time: 0.02206 sec
+NumPy addition time: 0.00128 sec
+List mean: 50.03, time: 0.00257 sec
+NumPy mean: 50.03, time: 0.00107 sec
+List item size: 8448712 bytes (approx)
+NumPy item size: 8000000 bytes (exact)
 ```
