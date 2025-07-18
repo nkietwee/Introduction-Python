@@ -82,8 +82,6 @@ This repository contains beginner-friendly Python exercises and documentation ca
   - [Basic Plot](W6-matplotlib/code/basic.ipynb)
   - [Plot Image](W6-matplotlib/code/plot.png)
 
----
-
 ### ➕ Numpy:
 - **Documentation**:  
   - [Numpy Overview](W6-numpy/doc/numpy.md)
