@@ -124,18 +124,18 @@ is_active = input("Active? (y/n): ").lower() == 'y'
 
 **syntax :**
 ```python
-    try:
-        # Some Code
-    except:
-        # Executed if error in the
-        # try block
+	try:
+		# Some Code
+	except:
+		# Executed if error in the
+		# try block
 ```
 **example:**
 ```python
 try:
-    number = int(input("Enter a number: "))
+	number = int(input("Enter a number: "))
 except ValueError:
-    print("Invalid input! Please enter a valid number.")
+	print("Invalid input! Please enter a valid number.")
 ```
 
 ref exception : https://www.programiz.com/python-programming/exceptions

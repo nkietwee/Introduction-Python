@@ -1,7 +1,7 @@
 # Python `while` Loop
 
 The `while` loop in Python allows you to repeat a block of code **as long as** a given condition remains true. It’s ideal for situations where **you don’t know beforehand how many times you need to iterate.**
-
+_
 ---
 
 ## 1. Syntax

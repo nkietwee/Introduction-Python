@@ -33,7 +33,9 @@ import numpy as np
 ```
 
 ### 2. Creating Arrays
-
+![alt text](image-5.png)
+![alt text](image-4.png)
+![alt text](image-8.png)
 ```python
 # Creates a NumPy array from a Python sequence such as list or tuple.
 a = np.array([1, 2, 3]) 
@@ -78,6 +80,27 @@ np.array with ones:
 np.array with range of numbers: [0 2 4 6 8]
 np.array with evenly spaced values: [0.   0.25 0.5  0.75 1.  ]
 ```
+### 3. Random Numbers
+
+NumPy's `random` module helps you generate random numbers for simulations, model testing, or creating synthetic datasets. Setting a seed ensures reproducibility.
+
+```python
+np.random.seed(42)                  # Set seed for reproducibility
+
+a = np.random.rand(3)               # Generate 3 random floats between 0 and 1
+b = np.random.randint(0, 10, (2, 3)) # Generate 2x3 matrix of random integers between 0 and 9
+
+print(f"Random floats (a): {a}")
+print(f"Random integers (b):\n{b}")
+```
+
+Result :
+```python
+Random floats (a): [0.59241457 0.04645041 0.60754485]
+Random integers (b):
+[[4 8 6]
+ [1 3 8]]
+```
 
 ## Summary Table
 
@@ -91,7 +114,8 @@ np.array with evenly spaced values: [0.   0.25 0.5  0.75 1.  ]
 | `np.linspace(0, 1, 5)`        | 5 values between 0 and 1         | `[0. , 0.25, 0.5, 0.75, 1. ]`            | Creating axes, testing, interpolation    |
 
 
-### 3. Array Properties
+### 4. Array Properties
+![alt text](image-2.png)
 How to get properties of numpy array
 
 ```python
@@ -124,7 +148,9 @@ print(f'dtype of ones_array: {ones_array.dtype}')  # float64
 | `np.ones((3, 3)).size` | Total number of elements in the array          | `9`      | `float64` |
 
 
-### 4. Indexing and Slicing
+### 5. Indexing and Slicing
+![alt text](image-3.png)
+![alt text](image-1.png)
 how to access specific elements, rows, columns, and slices in a NumPy array.
 
 ```python
@@ -175,7 +201,12 @@ Boolean mask (a > 3):
 Elements greater than 3: [4 5 6 7 8 9]
 ```
 
-### 5. Array Operations
+### 6. Array Operations
+![alt text](image-9.png)
+![alt text](image-12.png)
+![alt text](image-6.png)
+![alt text](image-13.png)
+![alt text](image-11.png)
 Perform basic mathematical operations on arrays. These are essential for machine learning tasks like vectorized computation, feature scaling, and matrix math.
 
 ```python
@@ -232,12 +263,14 @@ a > 2: [False False  True]
 b == 5: [False  True False]
 ```
 
-### 6. Reshaping Arrays
+### 7. Reshaping Arrays
+![alt text](image.png)
+![alt text](image-10.png)
 NumPy allows easy reshaping of arrays to change their structure without changing the data.
 ```python
 a = np.arange(6)                     # Create array: [0, 1, 2, 3, 4, 5]
 b = a.reshape((2, 3))                # Reshape into 2 rows × 3 columns
-c = b.flatten()                      # Flatten back to 1D
+c = b.flatten()                      # Return a copy of the array collapsed into one dimension.
 
 print(f"Original a: {a}")
 print(f"Reshaped b (2x3):\n{b}")
@@ -253,7 +286,8 @@ Reshaped b (2x3):
 Flattened c: [0 1 2 3 4 5]
 ```
 
-### 7. Stacking Arrays
+### 8. Stacking Arrays
+![alt text](image-7.png)
 NumPy provides stacking functions to join arrays vertically (`vstack`)
 or horizontally (`hstack`). These are helpful when combining data from multiple sources.
 ```python
@@ -287,29 +321,6 @@ Horizontal stack (hstack):
 | `np.concatenate()` | Joins arrays along an existing axis | Customizable    | Default `axis=0`      | Shapes must match **except** on concat axis |
 | `np.vstack()`      | Stack arrays **vertically**         | (rows added)    | Always axis=0         | 1D arrays become rows                       |
 | `np.hstack()`      | Stack arrays **horizontally**       | (columns added) | Depends on array rank | 1D arrays become columns                    |
-
-### 8. Random Numbers
-
-NumPy's `random` module helps you generate random numbers for simulations, model testing, or creating synthetic datasets. Setting a seed ensures reproducibility.
-
-```python
-np.random.seed(42)                  # Set seed for reproducibility
-
-a = np.random.rand(3)               # Generate 3 random floats between 0 and 1
-b = np.random.randint(0, 10, (2, 3)) # Generate 2x3 matrix of random integers between 0 and 9
-
-print(f"Random floats (a): {a}")
-print(f"Random integers (b):\n{b}")
-```
-
-Result :
-```python
-Random floats (a): [0.59241457 0.04645041 0.60754485]
-Random integers (b):
-[[4 8 6]
- [1 3 8]]
-```
-
 
 ## Performance and Efficiency Comparison: Python List vs NumPy Array
 ```python
