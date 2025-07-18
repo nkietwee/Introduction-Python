@@ -37,7 +37,7 @@ import numpy as np
 ```python
 # Creates a NumPy array from a Python sequence such as list or tuple.
 a = np.array([1, 2, 3]) 
-b = np.array((1, 2, 3), , dtype=np.int16) # define type of data
+b = np.array((1, 2, 3), dtype=np.int16) # define type of data
 
 # Creates 2D NumPy array from a Python sequence such as list or tuple.
 c = np.array([[1, 2, 3], [4, 5, 6]])
@@ -315,51 +315,62 @@ Random integers (b):
 ```python
 import numpy as np
 import time
+import random
 
-# Create large random data (same every time)
+# Set size for the large random data
 size = 1_000_000
-py_list = [random.randint(0, 100) for _ in range(size)]  # Random integers 0–100
-np_array = np.array(py_list)  # Convert to NumPy array
 
-# 1. Add 1 to each element
+# Generate a Python list of random integers between 0 and 100 using a for loop
+python_list = []
+for _ in range(size):
+    python_list.append(random.randint(0, 100))
 
-# Using list (slow, not vectorized)
-start = time.time()
-py_result = [x + 1 for x in py_list]
-end = time.time()
-print(f"List addition time: {end - start:.5f} sec")
+# Convert Python list to a NumPy array for comparison
+numpy_array = np.array(python_list)
 
-# Using NumPy (fast, vectorized)
-start = time.time()
-np_result = np_array + 1
-end = time.time()
-print(f"NumPy addition time: {end - start:.5f} sec")
+# 1. Adding 1 to each element
+# Time the operation for Python list (slow, non-vectorized)
+start_time = time.time()
+python_list_result = []
+for x in python_list:
+    python_list_result.append(x + 1)
+end_time = time.time()
+print(f"List addition time: {end_time - start_time:.5f} seconds")
 
-# 2. Get mean value
+# Time the operation for NumPy array (fast, vectorized)
+start_time = time.time()
+numpy_array_result = numpy_array + 1
+end_time = time.time()
+print(f"NumPy addition time: {end_time - start_time:.5f} seconds")
 
-# Python list requires manual calculation
-start = time.time()
-py_mean = sum(py_list) / len(py_list)
-end = time.time()
-print(f"List mean: {py_mean:.2f}, time: {end - start:.5f} sec")
+# 2. Calculating the mean value
+# Calculate mean manually for Python list
+start_time = time.time()
+python_list_mean = sum(python_list) / len(python_list)
+end_time = time.time()
+print(f"List mean: {python_list_mean:.2f}, time: {end_time - start_time:.5f} seconds")
 
-# NumPy has built-in mean()
-start = time.time()
-np_mean = np.mean(np_array)
-end = time.time()
-print(f"NumPy mean: {np_mean:.2f}, time: {end - start:.5f} sec")
+# Calculate mean using NumPy's built-in method
+start_time = time.time()
+numpy_array_mean = np.mean(numpy_array)
+end_time = time.time()
+print(f"NumPy mean: {numpy_array_mean:.2f}, time: {end_time - start_time:.5f} seconds")
 
-# 3. Memory usage comparison
-print(f"List item size: {py_list.__sizeof__()} bytes (approx)")
-print(f"NumPy item size: {np_array.nbytes} bytes (exact)")
+# 3. Comparing memory usage
+# Display the memory size of the Python list
+print(f"List memory usage: {python_list.__sizeof__()} bytes (approx)")
+
+# Display the exact memory usage of the NumPy array
+print(f"NumPy memory usage: {numpy_array.nbytes} bytes (exact)")
+
 ```
 
 Result:
 ```python
-List addition time: 0.02206 sec
-NumPy addition time: 0.00128 sec
-List mean: 50.03, time: 0.00257 sec
-NumPy mean: 50.03, time: 0.00107 sec
-List item size: 8448712 bytes (approx)
-NumPy item size: 8000000 bytes (exact)
+List addition time: 0.05737 seconds
+NumPy addition time: 0.00137 seconds
+List mean: 50.00, time: 0.00294 seconds
+NumPy mean: 50.00, time: 0.00126 seconds
+List memory usage: 8448712 bytes (approx)
+NumPy memory usage: 8000000 bytes (exact)
 ```
