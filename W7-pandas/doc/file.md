@@ -126,7 +126,7 @@ df.tail() # Returns the last 5 rows
 df.info() # Shows information on each of the columns, such as the data type and number of missing values.
 df.shape # Returns the number of rows and columns of the DataFrame.
 df.describe() # Calculates a few summary statistics for each column.
-df.dtypes() # Returns a Series with the data type of each column.
+df.dtypes # Returns a Series with the data type of each column.
 df.values() # Return a Numpy representation of the DataFrame.
 df..value_counts() # Return a Series containing the frequency of each distinct row in the Dataframe.
 
