@@ -70,9 +70,10 @@ ref : https://matplotlib.org/2.1.1/api/_as_gen/matplotlib.pyplot.plot.html
 - **Subplots:**
   You can have multiple plots in the same figure using `subplots()`:
   ```python
-  fig, ax = plt.subplots(2, 2)  # 2 rows, 2 columns of plots
+  fig, ax = plt.subplots(3, 2)  # 3 rows, 2 columns of plots
   ax[0, 0].plot([1, 2, 3], [4, 5, 6])  # Top-left plot
   ax[0, 1].scatter([1, 2, 3], [6, 7, 8])  # Top-right plot
+  plt.tight_layout() # Adjust the padding between and around subplots.
   plt.show()
   ```
   `fig`: This is the figure object that holds all the subplots.
