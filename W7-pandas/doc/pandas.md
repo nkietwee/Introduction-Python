@@ -142,8 +142,9 @@ df.value_counts() # Return a Series containing the frequency of each distinct ro
 # Select row with index label 2
 row2 = df.loc[2]
 
-# Select rows 0–3 and columns 'Name' & 'Age'
-subset = df.loc[0:3, ['Name', 'Age']]
+# Select rows 0–3 and columns 'longitude' & 'latitude'
+subset = df.loc[0:3, ['longitude', 'latitude']]
+
 ```
 
 ### Position‑based (`.iloc`)

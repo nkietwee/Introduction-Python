@@ -72,19 +72,24 @@ This repository contains beginner-friendly Python exercises and documentation ca
   - [practical_unlimited_number.py](W5-function/code/practical_unlimited_number.py)
 
 ---
-## 📁 Week 6 - Matplotlib & Numpy
+## 📁 Week 6 - Numpy
 
-### 📊 Matplotlib:
-- **Documentation**:  
-  - [Matplotlib Overview](W6-matplotlib/doc/matplotlib.md)
-  
+- **[Documentation: Numpy](W6-numpy/doc/numpy.md)**
 - **Code Examples**:  
-  - [Basic Plot](W6-matplotlib/code/basic.ipynb)
-  - [Plot Image](W6-matplotlib/code/plot.png)
+  - [Numpy Code](W6-numpy/code/numpy.ipynb)
 
-### ➕ Numpy:
-- **Documentation**:  
-  - [Numpy Overview](W6-numpy/doc/numpy.md)
 
-- **Code Examples**:  
-  - [Test Numpy Operations](W6-numpy/code/test.ipynb)
+## 📁 Week 7 - Matplotlib and Pandas
+
+- ### Matplotlib:
+	- **[Documentation: Matplotlib](W7-matplotlib/doc/matplotlib.md)**
+	- **Code Examples**:  
+  		- [matplotlib](W7-matplotlib/code/matplotlib.ipynb)
+
+- ### Pandas:
+	- **[Documentation: Pandas](W7-pandas/doc/pandas.md)**
+	- **Code Examples**:  
+  		- [pandas](W7-pandas/code/pandas.ipynb)
+
+
+
