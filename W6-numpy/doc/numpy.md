@@ -378,7 +378,7 @@ print(f"NumPy memory usage: {numpy_array.nbytes} bytes (exact)")
 
 Result:
 ```python
-List addition time: 0.05737 seconds
+List addition time: 0.5737 seconds
 NumPy addition time: 0.00137 seconds
 List mean: 50.00, time: 0.00294 seconds
 NumPy mean: 50.00, time: 0.00126 seconds

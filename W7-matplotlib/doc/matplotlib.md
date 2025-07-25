@@ -125,6 +125,3 @@ ref : https://matplotlib.org/2.1.1/api/_as_gen/matplotlib.pyplot.plot.html
   You can show how Matplotlib is useful in different fields such as finance (stock prices), scientific research (experiment results), or social media (user engagement over time).
 
 ---
-
-## Conclusion
-Encourage students to experiment with Matplotlib’s capabilities by adjusting plot styles, adding annotations, or combining plots to better present complex data. Provide links to the Matplotlib documentation so students can continue learning independently.
