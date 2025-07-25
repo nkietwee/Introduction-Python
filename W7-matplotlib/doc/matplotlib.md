@@ -73,7 +73,7 @@ ref : https://matplotlib.org/2.1.1/api/_as_gen/matplotlib.pyplot.plot.html
   fig, ax = plt.subplots(3, 2)  # 3 rows, 2 columns of plots
   ax[0, 0].plot([1, 2, 3], [4, 5, 6])  # Top-left plot
   ax[0, 1].scatter([1, 2, 3], [6, 7, 8])  # Top-right plot
-  plt.tight_layout() # Adjust the padding between and around subplots.
+  plt.tight_layout() # Adjust the padding between and around subplots
   plt.show()
   ```
   `fig`: This is the figure object that holds all the subplots.
@@ -97,31 +97,21 @@ ref : https://matplotlib.org/2.1.1/api/_as_gen/matplotlib.pyplot.plot.html
   plt.show()
   ```
 
-## 7. Working with Data
-- **Pandas Integration:**
-  Matplotlib works well with Pandas DataFrames, making it easy to plot data directly from a table. Example:
-  ```python
-  import pandas as pd
-  df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
-  df.plot(kind='bar')  # Bar chart from the DataFrame
-  plt.show()
-  ```
-
-## 8. Customization with Styles
+## 7. Customization with Styles
 - You can change the overall style of the plot using pre-built themes, such as `ggplot` or `seaborn`:
   ```python
   plt.style.use('ggplot')  # Using the 'ggplot' style
   ```
   ref : https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html
 
-## 9. Saving Figures
+## 8. Saving Figures
 - After generating a plot, you can save it to a file:
   ```python
   plt.plot([1, 2, 3], [1, 4, 9])
   plt.savefig('plot.png')  # Save the plot as a PNG image
   ```
 
-## 10. Practical Examples and Exercises
+## 9. Practical Examples and Exercises
 - **Real-World Examples:**
   You can show how Matplotlib is useful in different fields such as finance (stock prices), scientific research (experiment results), or social media (user engagement over time).
 
