@@ -27,6 +27,8 @@ else:
 
 ## 🔸 Example 1: Simple if...else
 
+### Code
+
 ```python
 x = 10
 
@@ -36,9 +38,17 @@ else:
     print("x is less than or equal to 5")
 ```
 
+### Output
+
+```bash
+x is greater than 5
+```
+
 ---
 
 ## 🔸 Example 2: if...elif...else
+
+### Code
 
 ```python
 score = 75
@@ -53,14 +63,28 @@ else:
     print("Grade D or lower")
 ```
 
+### Output
+
+```bash
+Grade C
+```
+
 ---
 
 ## 🔸 Example 3: One-liner if...else (Ternary Operator)
+
+### Code
 
 ```python
 age = 18
 status = "Adult" if age >= 18 else "Minor"
 print(status)
+```
+
+### Output
+
+```bash
+Adult
 ```
 
 ---
