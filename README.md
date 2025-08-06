@@ -96,4 +96,4 @@ This repository contains beginner-friendly Python exercises and documentation ca
 - ### Prediction:
 	- **[Documentation: Prediction Hours And Scores](W8-HoursAndScores/doc/predict.md)**
 	- **Code Examples**:  
-  		- [Hours And Scores](W8-HoursAndScores/code/predict.ipynb)
+  		- [Hours And Scores](W8-HoursAndScores/code/HoursAndScores.ipynb)
