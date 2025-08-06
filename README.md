@@ -91,5 +91,9 @@ This repository contains beginner-friendly Python exercises and documentation ca
 	- **Code Examples**:  
   		- [pandas](W7-pandas/code/pandas.ipynb)
 
+## 📁 Week 8 - Hours And Scores
 
-
+- ### Prediction:
+	- **[Documentation: Prediction Hours And Scores](W8-HoursAndScores/doc/predict.md)**
+	- **Code Examples**:  
+  		- [Hours And Scores](W8-HoursAndScores/code/predict.ipynb)
