@@ -83,7 +83,3 @@ Check how accurate the model is using metrics like:
 - Square each difference
 - Find the average of all squared errors
 
-## Summary
-- Lower MSE = Better model (less error)
-- Units of MSE = Squared units of the target
-    (e.g., if scores are in points, MSE is in point²)
