@@ -14,9 +14,16 @@ Select Linear Regression as the prediction model because:
 ```python
 plt.scatter(Hours, Scores)
 ```
-   
-    - Plot a scatter graph to explore the relationship between hours and scores.
-    - Check if the relationship is linear.
+
+### Visualize the data and regression line
+    - **Visualize the data** means showing your data as a picture, usually by plotting points on a graph (called a scatter plot) so you can see how your data looks.
+    - **A regression line** is a straight line that best fits your data points. It shows the general trend or relationship between two things — for example, how exam scores change when study hours increase.
+    - **Combining both** means you plot the actual data points and draw the regression line on the same graph to see how well the line fits the data.
+
+### Histogram
+    - A histogram is a type of bar chart that shows how data is distributed — it tells you how many data points fall into different ranges or “bins.”
+    - It groups your data into intervals and counts how many values fall into each interval.
+    - For example, it can show how many students studied between 1-2 hours, 2-3 hours, etc., or how many students scored between 60-70 points, 70-80 points, etc.
 
 ## Train the Model
 Fit the model with your training data:
@@ -38,13 +45,37 @@ model.predict([[6.5]])
 
 ## Evaluate the Model
 Check how accurate the model is using metrics like:
-    - Mean Squared Error (MSE)
-    - R² Score (closer to 1 is better)
+```python
+| Metric                             | Description                                            |
+| ---------------------------------- | ------------------------------------------------------ |
+| **MAE** (Mean Absolute Error)      | Average of absolute differences (no squaring)          |
+| **MSE** (Mean Squared Error)       | Average of squared differences                         |
+| **RMSE** (Root Mean Squared Error) | Square root of MSE (same units as the original target) |
+```
 
-### Mean Squared Error (MSE)
-MSE (Mean Squared Error) is a metric used to evaluate the accuracy of regression models.
-It tells us how far off the model’s predictions are from the actual values — on average — by squaring the errors.
+### MSE (Mean Squared Error)
+    - **What it is**: The average of the squared differences between actual and predicted values.
+    - **Pros**: Penalizes large errors more heavily.
+    - **Cons**: The result is in squared units, which can be harder to interpret.
 
+### MAE (Mean Absolute Error)
+    - **What it is**: The average of the absolute differences between actual and predicted values.
+    - **Pros**: Not as sensitive to outliers as MSE/RMSE.
+    - **Cons**: Doesn’t penalize large errors as heavily.
+
+### RMSE (Root Mean Squared Error)
+    - **What it is**: The square root of the MSE, bringing the error back to the same unit as the target variable.
+    - **Pros**: Easier to interpret than MSE because it’s in the original scale.
+    - **Cons**: Still sensitive to outliers, like MSE.
+
+### R² Score (Coefficient of Determination)
+    - **What it is**: Indicates the proportion of variance in the dependent variable that is explained by the model.
+    - **Range**:
+            1.0 → Perfect prediction
+            0 → No better than predicting the mean
+            Negative → Worse than predicting the mean
+    - **Pros**: Easy to understand as a percentage of explained variance.
+    - **Cons**: Doesn’t directly measure the size of the prediction errors.
 
 ### In Simple 
     - Take the difference between predicted and actual values
