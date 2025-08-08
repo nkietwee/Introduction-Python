@@ -46,11 +46,12 @@ model.predict([[6.5]])
 ## Evaluate the Model
 Check how accurate the model is using metrics like:
 ```python
-| Metric                             | Description                                            |
-| ---------------------------------- | ------------------------------------------------------ |
-| **MAE** (Mean Absolute Error)      | Average of absolute differences (no squaring)          |
-| **MSE** (Mean Squared Error)       | Average of squared differences                         |
-| **RMSE** (Root Mean Squared Error) | Square root of MSE (same units as the original target) |
+| Metric                             | Description                                                        |
+| ---------------------------------- | ------------------------------------------------------------------ |
+| **MAE** (Mean Absolute Error)      | Average of absolute differences (no squaring)                      |
+| **MSE** (Mean Squared Error)       | Average of squared differences                                     |
+| **RMSE** (Root Mean Squared Error) | Square root of MSE (same units as the original target)             |
+| **R²** (R-squared)                 | Proportion of variance explained by the model (ranges from 0 to 1) |
 ```
 
 ### MSE (Mean Squared Error)
