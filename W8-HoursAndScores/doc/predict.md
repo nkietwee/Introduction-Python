@@ -8,7 +8,7 @@ You can use your own dataset in .csv format with Hours and Score columns.
 
 ## Choose a Model
 Select Linear Regression as the prediction model because:
-    - The relationship between study hours and exam scores is approximately linear.
+- The relationship between study hours and exam scores is approximately linear.
 
 ## Analyze and Visualize the Data (EDA)
 ```python
@@ -77,12 +77,12 @@ Check how accurate the model is using metrics like:
 - **Pros**: Easy to understand as a percentage of explained variance.
 - **Cons**: Doesn’t directly measure the size of the prediction errors.
 
-### In Simple 
+## In Simple 
 - Take the difference between predicted and actual values
 - Square each difference
 - Find the average of all squared errors
 
-### Summary
+## Summary
 - Lower MSE = Better model (less error)
 - Units of MSE = Squared units of the target
     (e.g., if scores are in points, MSE is in point²)
