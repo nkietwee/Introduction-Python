@@ -16,11 +16,13 @@ plt.scatter(Hours, Scores)
 ```
 
 ### Visualize the data and regression line
+
     - **Visualize the data** means showing your data as a picture, usually by plotting points on a graph (called a scatter plot) so you can see how your data looks.
     - **A regression line** is a straight line that best fits your data points. It shows the general trend or relationship between two things — for example, how exam scores change when study hours increase.
     - **Combining both** means you plot the actual data points and draw the regression line on the same graph to see how well the line fits the data.
 
 ### Histogram
+
     - A histogram is a type of bar chart that shows how data is distributed — it tells you how many data points fall into different ranges or “bins.”
     - It groups your data into intervals and counts how many values fall into each interval.
     - For example, it can show how many students studied between 1-2 hours, 2-3 hours, etc., or how many students scored between 60-70 points, 70-80 points, etc.
@@ -69,6 +71,7 @@ Check how accurate the model is using metrics like:
     - **Cons**: Still sensitive to outliers, like MSE.
 
 ### R² Score (Coefficient of Determination)
+
     - **What it is**: Indicates the proportion of variance in the dependent variable that is explained by the model.
     - **Range**:
             1.0 → Perfect prediction
@@ -78,11 +81,13 @@ Check how accurate the model is using metrics like:
     - **Cons**: Doesn’t directly measure the size of the prediction errors.
 
 ### In Simple 
+
     - Take the difference between predicted and actual values
     - Square each difference
     - Find the average of all squared errors
 
 ### Summary
+
     - Lower MSE = Better model (less error)
     - Units of MSE = Squared units of the target
         (e.g., if scores are in points, MSE is in point²)
