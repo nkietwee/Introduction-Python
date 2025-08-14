@@ -97,3 +97,8 @@ This repository contains beginner-friendly Python exercises and documentation ca
 	- **[Documentation: Prediction Hours And Scores](W8-HoursAndScores/doc/predict.md)**
 	- **Code Examples**:  
   		- [Hours And Scores](W8-HoursAndScores/code/HoursAndScores.ipynb)
+
+## 📁 Week 8 - Difference Between Classification and Regression
+
+- ### Difference Between Classification and Regression:
+	- **[Documentation: Difference Between Classification and Regression](W9-model/doc/model.md)**
