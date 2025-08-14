@@ -46,12 +46,36 @@ The best-fit line will be the one that optimizes the values of m (slope) and b (
 
 ### Positive Linear Relationship
 
-![](../img/image-5.png){style="display: block; margin: 0 auto"}
+![](../img/image-5.png)
 
 - When X increases → Y also increases.
 - Points trend upward from the lower-left to the upper-right.
 - Example: More study hours → Higher exam scores.
 - Correlation coefficient (r) > 0.
+
+### Negative Linear Relationship
+
+![](../img/image-6.png)
+
+- When X increases → Y decreases.
+- Points trend downward from the upper-left to the lower-right.
+- Example: More days absent → Lower exam scores.
+- Correlation coefficient (r) < 0.
+
+### No Apparent Linear Relationship
+
+![](../img/image-7.png)
+
+- No clear pattern showing that Y consistently increases or decreases with X.
+- Points are scattered randomly without a noticeable slope.
+- Example: Shirt color → Exam score (no logical connection).
+- Correlation coefficient (r) ≈ 0.
+
+### No correlation
+
+![](../img/image-8.png)
+
+The two variables below do not exhibit a discernible pattern, so they have no correlation.
 
 ## Example Predict
 
