@@ -14,16 +14,6 @@ Supervised learning is a type of machine learning where algorithms learn input-t
 
 - Definition: supervised learning algorithms learn to predict input, output or X to Y mapping.
 
-## Overview
-
-In **machine learning**, both **classification** and **regression** are types of **supervised learning**.  
-The main difference lies in the type of output variable:
-
-- **Classification** → Predicts **categories or classes** (discrete values)
-- **Regression** → Predicts **continuous numerical values**
-
----
-
 ## Types of Supervised Learning
 
 ![Alt text](../img/image-1.png)
