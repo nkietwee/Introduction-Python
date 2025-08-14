@@ -12,7 +12,7 @@ Select `Linear Regression` as the prediction model because:
 
 ## What is Linear Regression ?
 
-![Alt Text](../img/image-2.png)
+![](../img/image-2.png)
 
 Here Y is called a dependent or target variable and X is called an independent variable also known as the predictor of Y. There are many types of functions or modules that can be used for regression. A linear function is the simplest type of function. Here, X may be a single feature or multiple features representing the problem.
 
@@ -28,19 +28,30 @@ The best-fit line will be the one that optimizes the values of m (slope) and b (
 
 ## Assumptions of the Linear Regression
 
-- 1. Linearity: The relationship between inputs (X) and the output (Y) is a straight line.
+- Linearity: The relationship between inputs (X) and the output (Y) is a straight line.
 
-![Alt Text](../img/image-3.png)
+![](../img/image-3.png)
 
-- 2. Independence of Errors: The errors in predictions should not affect each other.
-- 3. Constant Variance (Homoscedasticity): The errors should have equal spread across all values of the input. If the spread changes (like fans out or shrinks), it's called heteroscedasticity and it's a problem for the model.
+- Independence of Errors: The errors in predictions should not affect each other.
+- Constant Variance (Homoscedasticity): The errors should have equal spread across all values of the input. If the spread changes (like fans out or shrinks), it's called heteroscedasticity and it's a problem for the model.
 
-![Alt Text](../img/image-4.png)
+![](../img/image-4.png)
 
-- 4. Normality of Errors: The errors should follow a normal (bell-shaped) distribution.
-- 5. No Multicollinearity(for multiple regression): Input variables shouldn’t be too closely related to each other.
-- 6. No Autocorrelation: Errors shouldn't show repeating patterns, especially in time-based data.
-- 7. Additivity: The total effect on Y is just the sum of effects from each X, no mixing or interaction between them.
+- Normality of Errors: The errors should follow a normal (bell-shaped) distribution.
+- No Multicollinearity(for multiple regression): Input variables shouldn’t be too closely related to each other.
+- No Autocorrelation: Errors shouldn't show repeating patterns, especially in time-based data.
+- Additivity: The total effect on Y is just the sum of effects from each X, no mixing or interaction between them.
+
+## Correlation
+
+### Positive Linear Relationship
+
+![](../img/image-5.png){style="display: block; margin: 0 auto"}
+
+- When X increases → Y also increases.
+- Points trend upward from the lower-left to the upper-right.
+- Example: More study hours → Higher exam scores.
+- Correlation coefficient (r) > 0.
 
 ## Example Predict
 
@@ -139,7 +150,7 @@ plt.show()
 - Plots the regression line in red, using predictions from the model for all X.
 - Labels the axes, sets a title, enables gridlines, shows legend, and displays the plot.
 
-![Alt Text](../img/image.png)
+![](../img/image.png)
 
 - Blue Dots (Actual Data)
     Each dot represents a real student’s data.
@@ -175,7 +186,7 @@ plt.show()
 - Again, must ensure Scores exists in df.
 - Titles the plot, labels the x-axis, enables gridlines, and shows the plot.
 
-![Alt Text](../img/image-1.png)
+![](../img/image-1.png)
 
 This plot is a histogram with a KDE (Kernel Density Estimate) curve.
 
