@@ -32,8 +32,8 @@ The best-fit line will be the one that optimizes the values of m (slope) and b (
 Score=5×Hours Studied+20
 ```
 
-- If you study for 4 hours → Score = 5×4 + 20 = 40
-- If you study for 8 hours → Score = 5×8 + 20 = 60
+- If you study for `4 hours` → `Score = 5×4 + 20 = 40`
+- If you study for `8 hours` → `Score = 5×8 + 20 = 60`
 
 ## Correlation
 
