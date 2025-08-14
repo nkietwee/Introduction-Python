@@ -26,21 +26,14 @@ The equation of Linear Regression is `y = mx + b` when
 
 The best-fit line will be the one that optimizes the values of m (slope) and b (intercept) so that the predicted y values are as close as possible to the actual data points.
 
-## Assumptions of the Linear Regression
+### Example
 
-- Linearity: The relationship between inputs (X) and the output (Y) is a straight line.
+```bash
+Score=5×Hours Studied+20
+```
 
-![](../img/image-3.png)
-
-- Independence of Errors: The errors in predictions should not affect each other.
-- Constant Variance (Homoscedasticity): The errors should have equal spread across all values of the input. If the spread changes (like fans out or shrinks), it's called heteroscedasticity and it's a problem for the model.
-
-![](../img/image-4.png)
-
-- Normality of Errors: The errors should follow a normal (bell-shaped) distribution.
-- No Multicollinearity(for multiple regression): Input variables shouldn’t be too closely related to each other.
-- No Autocorrelation: Errors shouldn't show repeating patterns, especially in time-based data.
-- Additivity: The total effect on Y is just the sum of effects from each X, no mixing or interaction between them.
+- If you study for 4 hours → Score = 5×4 + 20 = 40
+- If you study for 8 hours → Score = 5×8 + 20 = 60
 
 ## Correlation
 
