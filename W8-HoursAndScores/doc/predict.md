@@ -12,17 +12,17 @@ Select `Linear Regression` as the prediction model because:
 
 ## What is Linear Regression ?
 
-![](../img/image-2.png)
+![](../img/image-2-2.png)
 
 Here Y is called a dependent or target variable and X is called an independent variable also known as the predictor of Y. There are many types of functions or modules that can be used for regression. A linear function is the simplest type of function. Here, X may be a single feature or multiple features representing the problem.
 
 ### Equation
 
 The equation of Linear Regression is `y = mx + b` when
-- y is the predicted value (dependent variable)
-- x is the input (independent variable)
-- m is the slope of the line (how much y changes when x changes)
-- b is the intercept (the value of y when x = 0)
+- `y` is the predicted value (dependent variable)
+- `x` is the input (independent variable)
+- `m` is the slope of the line (how much y changes when x changes)
+- `b` is the intercept (the value of y when x = 0)
 
 The best-fit line will be the one that optimizes the values of m (slope) and b (intercept) so that the predicted y values are as close as possible to the actual data points.
 
