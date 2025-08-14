@@ -7,24 +7,40 @@ This project aims to predict exam scores based on the number of hours spent stud
 You can use your own dataset in .csv format with Hours and Score columns.
 
 ## Choose a Model
-Select Linear Regression as the prediction model because:
+Select `Linear Regression` as the prediction model because:
 - The relationship between study hours and exam scores is approximately linear.
 
-## Analyze and Visualize the Data (EDA)
-```python
-plt.scatter(Hours, Scores)
-```
+## What is Linear Regression ?
 
-### Visualize the data and regression line
+![Alt Text](../img/image-2.png)
 
-- **Visualize the data** means showing your data as a picture, usually by plotting points on a graph (called a scatter plot) so you can see how your data looks.
-- **A regression line** is a straight line that best fits your data points. It shows the general trend or relationship between two things — for example, how exam scores change when study hours increase.
-- **Combining both** means you plot the actual data points and draw the regression line on the same graph to see how well the line fits the data.
+Here Y is called a dependent or target variable and X is called an independent variable also known as the predictor of Y. There are many types of functions or modules that can be used for regression. A linear function is the simplest type of function. Here, X may be a single feature or multiple features representing the problem.
 
-### Histogram
-- A histogram is a type of bar chart that shows how data is distributed — it tells you how many data points fall into different ranges or “bins.”
-- It groups your data into intervals and counts how many values fall into each interval.
-- For example, it can show how many students studied between 1-2 hours, 2-3 hours, etc., or how many students scored between 60-70 points, 70-80 points, etc.
+### Equation
+
+The equation of Linear Regression is `y = mx + b` when
+- y is the predicted value (dependent variable)
+- x is the input (independent variable)
+- m is the slope of the line (how much y changes when x changes)
+- b is the intercept (the value of y when x = 0)
+
+The best-fit line will be the one that optimizes the values of m (slope) and b (intercept) so that the predicted y values are as close as possible to the actual data points.
+
+## Assumptions of the Linear Regression
+
+- 1. Linearity: The relationship between inputs (X) and the output (Y) is a straight line.
+
+![Alt Text](../img/image-3.png)
+
+- 2. Independence of Errors: The errors in predictions should not affect each other.
+- 3. Constant Variance (Homoscedasticity): The errors should have equal spread across all values of the input. If the spread changes (like fans out or shrinks), it's called heteroscedasticity and it's a problem for the model.
+
+![Alt Text](../img/image-4.png)
+
+- 4. Normality of Errors: The errors should follow a normal (bell-shaped) distribution.
+- 5. No Multicollinearity(for multiple regression): Input variables shouldn’t be too closely related to each other.
+- 6. No Autocorrelation: Errors shouldn't show repeating patterns, especially in time-based data.
+- 7. Additivity: The total effect on Y is just the sum of effects from each X, no mixing or interaction between them.
 
 ## Example Predict
 
@@ -123,6 +139,28 @@ plt.show()
 - Plots the regression line in red, using predictions from the model for all X.
 - Labels the axes, sets a title, enables gridlines, shows legend, and displays the plot.
 
+![Alt Text](../img/image.png)
+
+- Blue Dots (Actual Data)
+    Each dot represents a real student’s data.
+    - X-axis = Number of hours studied
+    - Y-axis = Exam score
+    Example: A point at (6, 35) means the student studied for 6 hours and scored 35.
+- Red Line (Regression Line)
+    This is the straight line created by the Linear Regression model to show the trend.
+    - Upward slope → Positive relationship between hours studied and exam score.
+    - Points close to the line mean the prediction is very close to the actual data.
+    - Points far from the line show larger prediction errors (residuals).
+- Trend
+    Most points follow the red line’s direction, meaning more study hours tend to result in higher scores.
+- Conclusion:
+    - There is a positive correlation between study hours and exam scores.
+    - The more hours students study, the higher their scores tend to be.
+    - The regression line fits the data well — most points are close to the line, meaning the Linear Regression model explains the relationship fairly well.
+    - A few outliers exist (students whose scores are unexpectedly high or low compared to the trend).
+
+**Generally, more study hours mean higher exam scores.**
+
 ### Histogram of Scores
 
 ```python
@@ -137,6 +175,30 @@ plt.show()
 - Again, must ensure Scores exists in df.
 - Titles the plot, labels the x-axis, enables gridlines, and shows the plot.
 
+![Alt Text](../img/image-1.png)
+
+This plot is a histogram with a KDE (Kernel Density Estimate) curve.
+
+- X-axis (Score) → The range of exam scores.
+- Y-axis (Frequency) → How many students fall into each score range.
+- Blue bars:
+    - Each bar represents a score interval (bin).
+    - The height of the bar shows the number of students whose scores fall in that range.
+    - For example, a tall bar around 10–15 means many students scored between 10 and 15.
+- Blue curve (KDE):
+    - A smoothed version of the distribution to show the general shape of score distribution.
+    - Peaks in the curve mean more students scored in that range.
+    - Valleys mean fewer students scored there.
+- Trend in this chart:
+    - Scores are spread across the range from about 0 to 50.
+    - There are a few peaks, meaning there are multiple common score ranges, not just one.
+- Conclusion:
+    - Scores are widely spread, from very low to around 50.
+    - The distribution is not perfectly normal — it has multiple peaks, suggesting several groups of students with different score ranges.
+    - High concentrations of students appear in certain ranges, e.g., low scores (~10–15), mid-range (~20–25), and higher scores (~40–45).
+    - This indicates varying performance levels among students rather than everyone performing at a similar level.
+
+**Students’ scores are spread across different groups — some low, some mid, and some high.**
 
 ## Evaluate the Model
 Check how accurate the model is using metrics like:
@@ -205,9 +267,3 @@ df
 - Adds a residual column = actual score − predicted score.
 - Again, Scores must exist in df.
 - Displays the full DataFrame with original data, predictions, and residuals.
-
-## In Simple 
-- Take the difference between predicted and actual values
-- Square each difference
-- Find the average of all squared errors
-
