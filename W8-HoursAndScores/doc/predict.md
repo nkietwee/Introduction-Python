@@ -244,6 +244,10 @@ Check how accurate the model is using metrics like:
 - **Pros**: Penalizes large errors more heavily.
 - **Cons**: The result is in squared units, which can be harder to interpret.
 - **Code**: mean_squared_error(y_test, predections)
+- **Metric**:
+    ```ruby
+    $\mathrm{MSE}=\frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y}_i)^2$
+    ````
 
 ### MAE (Mean Absolute Error)
 - **What it is**: The average of the absolute differences between actual and predicted values.
