@@ -270,7 +270,10 @@ Check how accurate the model is using metrics like:
 - **Cons**: Doesn’t directly measure the size of the prediction errors.
 - **Code**: r2_score(y_test, predections)
 ![Alt text](../img/image-12.png)
-
+- **SSE (Sum of Squared Errors)**: the sum of squared differences between actual and predicted values.
+- **SST (Total Sum of Squares)**: Measures the total variability in the actual data around its mean (independent of any model).
+- **Example**:
+    
 ### Residuals
 
 ```python
