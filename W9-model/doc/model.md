@@ -1,5 +1,17 @@
 # Difference Between Classification and Regression
 
+## Supervised vs Unsupervised
+
+![Alt text](../img/image-2.png)
+
+| View             | Supervised                                  | Unsupervised                                            |
+| ---------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Labels           | Yes (inputs **and** correct answers)        | No (inputs only)                                        |
+| Main goal        | Predict labels or numbers                   | Find structure/patterns                                 |
+| Typical tasks    | Classification, Regression                  | Clustering, Dimensionality Reduction, Anomaly Detection |
+| Example question | “What **will** this be?”                    | “What **groups/patterns** exist here?”                  |
+| Use when         | You have ground-truth answers to learn from | You want to explore/understand data first               |
+
 ## What is Supervised Learning?
 
 ![Alt text](../img/image.png)
