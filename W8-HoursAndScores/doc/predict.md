@@ -245,21 +245,23 @@ Check how accurate the model is using metrics like:
 - **Cons**: The result is in squared units, which can be harder to interpret.
 - **Code**: mean_squared_error(y_test, predections)
 - **Metric**:
-    ```ruby
-    $\mathrm{MSE}=\frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y}_i)^2$
-    ````
+![Alt text](../img/image-9.png)
 
 ### MAE (Mean Absolute Error)
 - **What it is**: The average of the absolute differences between actual and predicted values.
 - **Pros**: Not as sensitive to outliers as MSE/RMSE.
 - **Cons**: Doesn’t penalize large errors as heavily.
 - **Code**: mean_absolute_error(y_test , predections)
+- **Metric**:
+![Alt text](../img/image-10.png)
 
 ### RMSE (Root Mean Squared Error)
 - **What it is**: The square root of the MSE, bringing the error back to the same unit as the target variable.
 - **Pros**: Easier to interpret than MSE because it’s in the original scale.
 - **Cons**: Still sensitive to outliers, like MSE.
 - **Code**: rmse = np.sqrt(mean_squared_error(y_test, predections))
+- **Metric**:
+![Alt text](../img/image-11.png)
 
 ### R² Score (Coefficient of Determination)
 - **What it is**: Indicates the proportion of variance in the dependent variable that is explained by the model.
@@ -270,6 +272,8 @@ Check how accurate the model is using metrics like:
 - **Pros**: Easy to understand as a percentage of explained variance.
 - **Cons**: Doesn’t directly measure the size of the prediction errors.
 - **Code**: r2_score(y_test, predections)
+- **Metric**:
+![Alt text](../img/image-12.png)
 
 ### Residuals
 
