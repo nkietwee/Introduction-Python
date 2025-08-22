@@ -79,7 +79,6 @@ y_pred = clf.predict(X_test)
 
 # Show results
 print("Classification Accuracy:", accuracy_score(y_test, y_pred))
-print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 ```
 
@@ -88,16 +87,6 @@ print("\nClassification Report:\n", classification_report(y_test, y_pred))
 ```python
 Classification Accuracy: 1.0
 
-Classification Report:
-              precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00        10
-           1       1.00      1.00      1.00         9
-           2       1.00      1.00      1.00        11
-
-    accuracy                           1.00        30
-   macro avg       1.00      1.00      1.00        30
-weighted avg       1.00      1.00      1.00        30
 ```
 
 ---
